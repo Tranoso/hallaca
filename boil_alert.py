@@ -15,7 +15,7 @@ telegram_send.send(messages=[message])
 
 while time.time() - boil_time < 15 * 60:
     temp = read_temp()
-    print("La tempratura está en {:.1f}ºC y llevamos {:.0f}s de 900s desde que hirvió".format(temp, time.time() - start_time))
+    print("La tempratura está en {:.1f}ºC y llevamos {:.0f}s de 900s desde que hirvió".format(temp, time.time() - boil_time))
     time.sleep(10)
 
 message = "Están listas las hallacas! nos demoramos {:.0f}s en todo el proceso".format(time.time() - start_time)
