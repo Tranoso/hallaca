@@ -10,7 +10,7 @@ while temp < 95:
     time.sleep(10)
 
 boil_time = time.time()
-print("Hirvió en {}s".fotmat(boil_time - start_time))
+print("Hirvió en {}s".format(boil_time - start_time))
 
 while time.time() - boil_time < 15 * 60:
     temp = read_temp()
